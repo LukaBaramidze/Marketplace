@@ -1,0 +1,64 @@
+<!-- item.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Item Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .listing-details {
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+
+        .listing-details img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+
+        .back-button {
+            background-color: #4caf50;
+            color: white;
+            padding: 8px 12px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .back-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<h1>Item Details</h1>
+<div class="listing-details">
+    <h2 id="modalListingName"></h2>
+    <p id="modalListingPrice"></p>
+    <p id="modalListingDescription"></p>
+    <img src="" id="modalListingPhoto" alt="Listing Photo">
+</div>
+<a href="index.html" class="back-button">Back to Listings</a>
+
+<script src="market.js" defer></script>
+</body>
+</html>
